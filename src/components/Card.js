@@ -9,7 +9,7 @@ const Card = ({name, email, username}) => {
 				<p>{ email }</p>
 			</div>
 		</div>
-		);
+	);
 }
 
 export default Card;

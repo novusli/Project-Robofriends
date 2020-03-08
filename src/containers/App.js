@@ -21,6 +21,7 @@ class App extends Component {
 		.then(users => this.setState({robots: users}))
 	}
 
+	// function inside of a component, use arrow function so that 'this' may refer to 'App' instead of the function itself
 	onSearchChange=(event)=> {
 		this.setState({searchfield: event.target.value})
 	}
@@ -28,6 +29,7 @@ class App extends Component {
 	
 	render() {
 		const { robots, searchfield } = this.state;
+		// includes () determines if a string contains the characters of a specific string.
 		const filteredRobots = robots.filter(robot =>{
 			return robot.name.toLowerCase().includes(searchfield.toLowerCase());
 		})

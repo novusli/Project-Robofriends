@@ -1,6 +1,7 @@
 import React from 'react';
 
-const SearchBox = ({searchfield, searchChange}) => {
+// searchfield is not used
+const SearchBox = ({searchChange}) => {
 	return (
 		<div className='pa2'>
 			<input
