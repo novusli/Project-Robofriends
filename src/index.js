@@ -21,7 +21,7 @@ ReactDOM.render(
         <App />
     </Provider>, 
     rootElement
-    )
+)
 
 registerServiceWorker();
 // ServiceWorker.unregister();
